@@ -66,11 +66,9 @@ export default {
     align-items: center;
     justify-content: space-between;
     padding: 40px 0 20px 0;
-    // test
-    background-color: bisque;
     
     & .section-one{
-        width: 90%;
+        width: 80%;
         padding: 60px 0 20px 0;
 
          & .col-left{
@@ -148,15 +146,15 @@ export default {
             & .brown-branch{
                     width: 50px;
                     position: absolute;
-                    right: 68px;
-                    top: -45px;
+                    right: 48px;
+                    top: -53px;
             }
 
             & .pink-butterfly-right{
                 width: 40px;
                 position: absolute;
                 top: 50px;
-                right: 50px;
+                right: 30px;
                 transform:rotate(94deg)
             }
 
@@ -164,7 +162,7 @@ export default {
                 width: 60px;
                 position: absolute;
                 bottom: 35px;
-                right: -55px;
+                right: -80px;
             }
         }
     }

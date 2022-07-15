@@ -1,7 +1,7 @@
 <template>
   <div>
     <MyHeader :links='menuLinks'/>
-    <MainComponent/>
+    <MainComponent :arrayImg='arrayImgSecondS'/>
   </div>
 </template>
 
@@ -47,9 +47,28 @@ export default {
           currentElement: false,
         },
 
+      ],
+
+      arrayImgSecondS:[
+        {
+          name:'h-2-port-img-1.jpg'
+        },
+        {
+          name:'h-2-port-img-2.jpg'
+        },
+        {
+          name:'h-2-port-img-3.jpg'
+        },
+        {
+          name:'h-2-port-img-4.jpg'
+        },
+        {
+          name:'h-2-port-img-5.jpg'
+        },
+        {
+          name:'h-2-port-img-6.jpg'
+        },
       ]
-
-
 
     }
   },
