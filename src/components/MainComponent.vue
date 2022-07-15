@@ -6,7 +6,7 @@
                 <img class="arrow left" src="../assets/svg/svg-2.svg" alt="arrow-left-icon">
             </div>
            <!-- section one -->
-            <div class="section-one-container flex">
+            <div class="section-one flex">
                 <!-- column left -->
                 <div class="col-left">
                     <!-- titolo-->
@@ -17,16 +17,23 @@
                     <p class="text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat a maiores eius, accusantium nulla suscipit dolore natus numquam,
                     </p>
-                    <button>READ MORE</button>
+                    <button>
+                        <a href="#">Read More</a>
+                    </button>
                 </div>
                 <!-- column right -->
                 <div class="col-right flex">
                    <div class="sub-clmn-left">
-                      <img src="../assets/img/h-2-slider-img-15.png" alt="">
-                      <img class="leaf" src="../assets/img/h-2-slider-img-12.png" alt="">
+                      <img class="woman" src="../assets/img/h-2-slider-img-15.png" alt="">
+                      <img class="leaf" src="../assets/img/h-2-slider-img-12.png" alt="leaf-img">
+                      <img class="green-branch" src="../assets/img/h-2-slider-img-13.png" alt="green-branch-img">
+                      <img class="pink-butterfly" src="../assets/img/short-slider-rev-1-img-2.png" alt="">
                    </div>
-                   <div class="sub- column-right">
-                      <img src="../assets/img/h-2-slider-img-16.png" alt="">
+                   <div class="sub-column-right">
+                        <img class="man" src="../assets/img/h-2-slider-img-16.png" alt="">
+                        <img class="brown-branch" src="../assets/img/h-2-slider-img-14.png" alt="brown-branch">
+                        <img class="pink-butterfly-right" src="../assets/img/short-slider-rev-1-img-2.png" alt="pink-burrfly">
+                        <img class="leafs" src="../assets/img/h-2-slider-img-17.png" alt="leafs">
                    </div>
                 </div>
             </div>
@@ -35,9 +42,7 @@
                 <img class="arrow right" src="../assets/svg/svg-2.svg" alt="arrow-right-icon">
             </div> 
         </section>
-         <!-- <div class="svg-test">
-            <img src="../assets/svg/svg-7.svg" alt="">
-        </div> -->
+       
     </div>
 </template>
 
@@ -56,8 +61,111 @@ export default {
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
+    padding: 40px 0;
     // test
-    background-color: pink;
+    background-color: bisque;
+    
+    & .section-one{
+        width: 90%;
+        padding: 60px 0;
+
+         & .col-left{
+        width: 40%;
+        margin-left: 15%;
+        & h2{
+            font-size: 55px;
+        }
+
+        & .text{
+            padding: 25px 0;
+        }
+
+        & button{
+            padding: 15px 30px;
+            border: 4px solid $utility_color;
+            font-size: 14px;
+            & a{
+                color: black;
+            }
+            
+
+            &:hover{
+                background-color: $utility_color;
+                border: 4px solid white;
+
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+
+    & .col-right{
+        width: 60%;
+        padding-left: 25px;
+
+        .sub-clmn-left{
+            position: relative;
+            & .woman{
+                width: 100%;
+                margin-left: 12px;
+            }
+            & .man{
+                 width: 90%;
+             }
+            & .leaf{
+                width: 25px;
+                position: absolute;
+                top:155px;
+                left: 0;
+            }
+            & .green-branch{
+                width: 40px;
+                position: absolute;
+                bottom:35px;
+                left: 20px;
+            }
+
+            & .pink-butterfly{
+                width: 40px;
+                position: absolute;
+                top: 0;
+                left: 10px;
+            }
+
+        }
+
+        .sub-column-right{
+            position: relative;
+            & .man{
+                width: 100%;
+                margin-right: 20px;
+            }
+
+            & .brown-branch{
+                    width: 50px;
+                    position: absolute;
+                    right: 68px;
+                    top: -45px;
+            }
+
+            & .pink-butterfly-right{
+                width: 40px;
+                position: absolute;
+                top: 50px;
+                right: 50px;
+                transform:rotate(94deg)
+            }
+
+             & .leafs{
+                width: 60px;
+                position: absolute;
+                bottom: 35px;
+                right: -55px;
+            }
+        }
+    }
+    }
 }
 
 .square-carosell{
@@ -74,6 +182,7 @@ export default {
     width: 20px;
     border-radius: 50%;
     padding: 3px;
+    cursor: pointer;
 }
 
 .left{
@@ -84,47 +193,12 @@ export default {
     transform: rotate(90deg);
 }
 
-.svg-test{
-    background-color: lightcoral;
-}
+// test
+// .svg-test{
+//     background-color: black;
+// }
 
-.section-one-container.flex{
-    padding: 20px 0;
-    justify-content: space-between;
 
-    & .col-left{
-        width: 30%;
-        margin-left: 15%;
-        & h2{
-            font-size: 55px;
-        }
 
-        & .text{
-            padding: 25px 0;
-        }
-
-        & button{
-            padding: 22px;
-            border: 4px solid $utility_color;
-            font-size: 12px;
-        }
-    }
-
-    & .col-right{
-        width: 60%;
-        padding-left: 25px;
-
-        .sub-clmn-left{
-            position: relative;
-            & .leaf{
-                width: 30px;
-                position: absolute;
-                top:200px;
-                left: 0;
-            }
-        }
-    }
-
-}
 
 </style>
