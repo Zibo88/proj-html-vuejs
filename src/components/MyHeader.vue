@@ -1,12 +1,18 @@
 <template>
+    <!-- container header -->
     <div class="header-menu-container flex">
+        <!-- logo -->
         <img class="header-logo" src="../assets/img/logo-sidearea-1.png" alt="">
+        <!-- lista di link dell'header menu -->
         <ul class="header-menu flex">
+            <!-- eseguo un ciclo for di ogni li per stampare tante li quanti sono gli oggetti trasferiti tramite props LINKS da App.vue -->
+            <!-- Assegno la classe current solo se link.currentElement è vera -->
             <li v-for="link,index in links" :key="index" class="menu-item" :class="{'current' : link.currentElement === true}">
                 <a :href="link.url" >
                     {{link.name}} 
                 </a>
             </li>
+            <!-- hamburger menu -->
             <img class="hamburger-menu" src="../assets/svg/svg-1.svg" alt="icon-menu">
         </ul>
     </div>
@@ -25,10 +31,10 @@ export default {
 @import '../style/common';
 
 .header-menu-container.flex{
-    padding: 30px;
+    width: 95%;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
     .header-logo{
         width: 100px;
         cursor: pointer;

@@ -1,11 +1,13 @@
 <template>
   <div>
     <MyHeader :links='menuLinks'/>
+    <MainComponent/>
   </div>
 </template>
 
 <script>
 import MyHeader from './components/MyHeader.vue'
+import MainComponent from './components/MainComponent.vue'
 
 export default {
   name: 'App',
@@ -53,6 +55,7 @@ export default {
   },
   components: {
     MyHeader,
+    MainComponent
   }
 }
 </script>
