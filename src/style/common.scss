@@ -34,9 +34,11 @@ a{
     color: #888888;
 }
 
-// HEADER
+.italic{
+    font-style: italic;
+}
 
+// HEADER
 li.current{
     border-bottom: 3px solid $utility_color;
-
 }

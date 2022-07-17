@@ -11,7 +11,7 @@
                 <div class="col-left">
                     <!-- titolo-->
                     <h2>
-                        Devotion that never <em>end</em>
+                        Devotion that never <span class="italic">end</span>
                     </h2>
                     <!-- testo -->
                     <p class="text">
