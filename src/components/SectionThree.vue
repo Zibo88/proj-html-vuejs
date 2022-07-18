@@ -46,9 +46,6 @@ export default {
         font-size: 50px;
         padding-bottom: 50px;
 
-        & .light-weight{
-            font-weight: 200;
-        }
     }
     
     & .line{

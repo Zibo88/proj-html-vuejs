@@ -12,6 +12,10 @@
         <section>
             <SectionThree :imgSectionThree='arraySectionThree'/>
         </section>
+
+        <section>
+            <SectionFor/>
+        </section>
    </div>
       
   
@@ -23,6 +27,7 @@
 import SectionOneComponent from './SectionOneComponent.vue'
 import SectionTwo from './SectionTwo.vue'
 import SectionThree from './SectionThree.vue'
+import SectionFor from './SectionFor.vue'
 
 export default {
     name:'MainComponent',
@@ -78,7 +83,8 @@ export default {
     components:{
         SectionOneComponent,
         SectionTwo,
-        SectionThree
+        SectionThree,
+        SectionFor
     }
     
 }
