@@ -58,9 +58,9 @@ export default {
         {
           name:'h-2-port-img-6.jpg'
         },
-      ],
+        ],
 
-        arraySectionThree:[
+            arraySectionThree:[
         {
             title:'First theres an idea',
             imgLink: 'data:image/png;base64,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',
@@ -88,21 +88,21 @@ export default {
             {
                 title: 'This way,loves: a detailed guide trough new design',
                 author: 'By Emily Fields',
-                img:'../assets/img/h-2-blog-img-1.jpg',
+                img:'h-2-blog-img-1.jpg',
                 day:'07',
                 monthAndYear: "MAY '19'",
             },
             {
                 title: 'I try to give people a different way of looking art',
                 author: 'By Emily Fields',
-                img:'../assets/img/h-2-blog-img-2.jpg',
+                img:'h-2-blog-img-2.jpg',
                  day:'07',
                 monthAndYear: "MAY '19'",
             },
             {
                 title: 'Introduce Richard Laperrière of those amzig features',
                 author: 'By Emily Fields',
-                img:'../assets/img/h-2-blog-img-3.jpg',
+                img:'h-2-blog-img-3.jpg',
                  day:'07',
                 monthAndYear: "MAY '19'",
             },

@@ -1,11 +1,11 @@
 <template>
        <div class="section-two-container">
             <ul class="list-second-section flex">
-                
-                <li class="item-second-section" v-for="poster in arrayImg" :key="poster">
-                    <img class="square" src="../assets/img/h-2-port-img-4.jpg" alt="item-img">
+
+                <li class="item-second-section" v-for="(poster, index) in arrayImg" :key="index">
+                    <!-- <img class="square" src="../assets/img/h-2-port-img-4.jpg" alt="item-img"> -->
                     <!-- //////////////// da sistemare ///////////////////// -->
-                    <!-- <img :src="`../assets/img/${poster.name}`" alt=""> -->
+                     <img :src="require(`../assets/img/${poster.name}`)" alt="poster-img">
                     <!-- ////////////////////////////////////////////////////// -->
 
                     <!-- :hover features -->

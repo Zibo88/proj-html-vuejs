@@ -2,7 +2,7 @@
   <div class="container">
     <MyHeader :links='menuLinks'/>
     <MainComponent/>
-    <MyFooter :info='footerObject'/>
+    <MyFooter :info='footerObject' :socialIcon="socialArray"/>
   </div>
 </template>
 
@@ -52,15 +52,33 @@ export default {
       ],
 
       footerObject:{
-        img:'../assets/imglogo-sidearea-1.png',
+        img:'logo-sidearea-1.png',
         slogan: "Let's Get Creative",
         email:'maree.qode@gmail.com',
         telephone: '+44645 321 789',
         address: "Avenue d'Auderghem",
         city: '1040 Brussels, Belgium',
         socialTitle:'Stay in touch with us'
+      },
+
+      socialArray:[
+        {
+          platform: 'fa-brands fa-twitter',
+        },
+        {
+          platform: 'fa-brands fa-pinterest-p',
+        },
+        {
+          platform: 'fa-brands fa-facebook-f',
+        },
+        {
+          platform: 'fa-brands fa-linkedin-in',
+        }
+      ]
+       
         
-      }
+       
+      
        
     }
   },

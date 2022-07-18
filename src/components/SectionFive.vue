@@ -1,8 +1,8 @@
 <template>
     <div class="section-5-container flex">
-        <div v-for="element in blogImg" :key="element" class="card">
+        <div v-for="element, index in blogImg" :key="index" class="card">
             <!-- <img :src="`../assets/img/${element.img}`" alt=""> -->
-            <img class="blog-img" src="../assets/img/h-2-blog-img-3.jpg" alt="blog-img">
+            <img class="blog-img" :src="require(`../assets/img/${element.img}`)" alt="blog-img">
             <h4 class="title-card light-weight">{{element.title}}</h4>
             <div class="author italic">{{element.author}}</div>
 

@@ -24,13 +24,13 @@
                 <!-- column right -->
                 <div class="col-right flex">
                    <div class="sub-clmn-left">
-                      <img class="woman" src="../assets/img/h-2-slider-img-15.png" alt="">
+                      <img class="woman" src="../assets/img/h-2-slider-img-15.png" alt="woman-img">
                       <img class="leaf" src="../assets/img/h-2-slider-img-12.png" alt="leaf-img">
                       <img class="green-branch" src="../assets/img/h-2-slider-img-13.png" alt="green-branch-img">
-                      <img class="pink-butterfly" src="../assets/img/short-slider-rev-1-img-2.png" alt="">
+                      <img class="pink-butterfly" src="../assets/img/short-slider-rev-1-img-2.png" alt="butterfly-img">
                    </div>
                    <div class="sub-column-right">
-                        <img class="man" src="../assets/img/h-2-slider-img-16.png" alt="">
+                        <img class="man" src="../assets/img/h-2-slider-img-16.png" alt="man-img">
                         <img class="brown-branch" src="../assets/img/h-2-slider-img-14.png" alt="brown-branch">
                         <img class="pink-butterfly-right" src="../assets/img/short-slider-rev-1-img-2.png" alt="pink-burrfly">
                         <img class="leafs" src="../assets/img/h-2-slider-img-17.png" alt="leafs">
