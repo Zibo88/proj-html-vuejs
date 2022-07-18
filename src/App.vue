@@ -2,7 +2,7 @@
   <div class="container">
     <MyHeader :links='menuLinks'/>
     <MainComponent/>
-    <MyFooter/>
+    <MyFooter :info='footerObject'/>
   </div>
 </template>
 
@@ -51,10 +51,17 @@ export default {
 
       ],
 
-      
-
-     
-
+      footerObject:{
+        img:'../assets/imglogo-sidearea-1.png',
+        slogan: "Let's Get Creative",
+        email:'maree.qode@gmail.com',
+        telephone: '+44645 321 789',
+        address: "Avenue d'Auderghem",
+        city: '1040 Brussels, Belgium',
+        socialTitle:'Stay in touch with us'
+        
+      }
+       
     }
   },
   components: {
