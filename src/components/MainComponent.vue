@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <main>
         <!-- prima sezione -->
         <section>
             <SectionOneComponent/>
@@ -16,7 +16,12 @@
         <section>
             <SectionFor/>
         </section>
-   </div>
+
+        <section>
+            <SectionFive :blogImg='arraySectionFive'/>
+        </section>
+
+   </main>
       
   
 
@@ -28,6 +33,7 @@ import SectionOneComponent from './SectionOneComponent.vue'
 import SectionTwo from './SectionTwo.vue'
 import SectionThree from './SectionThree.vue'
 import SectionFor from './SectionFor.vue'
+import SectionFive from './SectionFive.vue'
 
 export default {
     name:'MainComponent',
@@ -76,6 +82,30 @@ export default {
             text:'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         },
 
+        ],
+
+        arraySectionFive:[
+            {
+                title: 'This way,loves: a detailed guide trough new design',
+                author: 'By Emily Fields',
+                img:'../assets/img/h-2-blog-img-1.jpg',
+                day:'07',
+                monthAndYear: "MAY '19'",
+            },
+            {
+                title: 'I try to give people a different way of looking art',
+                author: 'By Emily Fields',
+                img:'../assets/img/h-2-blog-img-2.jpg',
+                 day:'07',
+                monthAndYear: "MAY '19'",
+            },
+            {
+                title: 'Introduce Richard Laperrière of those amzig features',
+                author: 'By Emily Fields',
+                img:'../assets/img/h-2-blog-img-3.jpg',
+                 day:'07',
+                monthAndYear: "MAY '19'",
+            },
         ]
       }
 
@@ -84,7 +114,8 @@ export default {
         SectionOneComponent,
         SectionTwo,
         SectionThree,
-        SectionFor
+        SectionFor,
+        SectionFive
     }
     
 }
@@ -94,27 +125,6 @@ export default {
 @import '../style/common';
 @import '../style/variables';
 
-// Sezione due
-
-
-// SEZIONE TRE
-.section-three-container{
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
-    padding: $padding_section;
-
-    & h2 {
-        font-size: 30px;
-        padding-bottom: 20px;
-    }
-
-    .svg-test{
-        background-color: pink;
-        color: green;
-    }
-
-}
 
 
 </style>

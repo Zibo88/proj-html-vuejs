@@ -1,13 +1,15 @@
 <template>
-  <div>
+  <div class="container">
     <MyHeader :links='menuLinks'/>
-    <MainComponent  />
+    <MainComponent/>
+    <MyFooter/>
   </div>
 </template>
 
 <script>
 import MyHeader from './components/MyHeader.vue'
 import MainComponent from './components/MainComponent.vue'
+import MyFooter from './components/MyFooter.vue'
 
 export default {
   name: 'App',
@@ -57,12 +59,15 @@ export default {
   },
   components: {
     MyHeader,
-    MainComponent
+    MainComponent,
+    MyFooter
   }
 }
 </script>
 
 <style lang="scss">
-
+.container{
+  max-width: 1440px;
+}
 
 </style>

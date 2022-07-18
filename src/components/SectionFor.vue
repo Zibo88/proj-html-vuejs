@@ -44,7 +44,7 @@ export default {
 
         & button{
             padding: 15px 40px;
-            background-color: #d9f0e3;
+            background-color: $color_green;
             border: none;
             font-size: 10px;
             font-weight: 600;

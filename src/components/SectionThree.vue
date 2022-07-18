@@ -39,6 +39,10 @@ export default {
 .section-three-container{
     position: relative;
     padding: $padding_section;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    
    
 
     & h2{
