@@ -1,6 +1,7 @@
 <template>
        <div class="section-two-container">
             <ul class="list-second-section flex">
+                
                 <li class="item-second-section" v-for="poster in arrayImg" :key="poster">
                     <img class="square" src="../assets/img/h-2-port-img-4.jpg" alt="item-img">
                     <!-- //////////////// da sistemare ///////////////////// -->
