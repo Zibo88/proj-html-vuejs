@@ -7,6 +7,7 @@
             <div class="section-three-icon-container flex">
 
                 <!-- item -->
+                <!-- eseguo un ciclo for per ogni elemento all'interno di imgSectionThree -->
                 <div v-for="element in imgSectionThree" :key="element" class="icon flex">
                     <div class="square flex">
                         <img class="section-3-img" src="../assets/img/short-slider-rev-1-img-4.png" alt="section-3-img">
@@ -25,6 +26,7 @@
 <script>
 export default {
     name:'SectionThree',
+    // importo l'array imgSectionThree da MainComponent
     props:{
         imgSectionThree:Array
     }

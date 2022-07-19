@@ -21,6 +21,7 @@
 <script>
 export default {
     name:'MyHeader',
+    // importo l'array tramite props da App.vue
     props:{
         links:Array
     }

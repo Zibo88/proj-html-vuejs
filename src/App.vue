@@ -1,12 +1,15 @@
 <template>
   <div class="container">
+    <!-- passo tramite props  l'array contenente i link dei menù  -->
     <MyHeader :links='menuLinks'/>
     <MainComponent/>
+    <!-- passo tramite props (info) l'Object footerObject contenente le info da stampare nel footer, tramite una props (socialIcon) passo l'array socialArray contenente le icone social (platform ha come valore la classe di fontawsome)  -->
     <MyFooter :info='footerObject' :socialIcon="socialArray"/>
   </div>
 </template>
 
 <script>
+// importo le varie componenti
 import MyHeader from './components/MyHeader.vue'
 import MainComponent from './components/MainComponent.vue'
 import MyFooter from './components/MyFooter.vue'
@@ -15,7 +18,6 @@ export default {
   name: 'App',
   data(){
     return{
-
       menuLinks:[
 
         {
@@ -74,12 +76,7 @@ export default {
         {
           platform: 'fa-brands fa-linkedin-in',
         }
-      ]
-       
-        
-       
-      
-       
+      ] 
     }
   },
   components: {

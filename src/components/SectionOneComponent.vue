@@ -42,6 +42,7 @@
                 <img class="arrow right" src="../assets/svg/svg-2.svg" alt="arrow-right-icon">
             </div> 
         </section>
+
         <div class="slider-indicator">
             <i v-for="n in 3" :key="n" class="fa-solid fa-circle"></i>
         </div>
@@ -71,37 +72,37 @@ export default {
         width: 80%;
         padding: 60px 0 20px 0;
 
-         & .col-left{
-        width: 40%;
-        margin-left: 15%;
-        & h2{
-            font-size: 55px;
-        }
-
-        & .text{
-            padding: 25px 0;
-        }
-
-        & button{
-            padding: 15px 30px;
-            border: 4px solid $utility_color;
-            font-size: 14px;
-            & a{
-                color: black;
+        & .col-left{
+            width: 40%;
+            margin-left: 15%;
+            & h2{
+                font-size: 55px;
             }
-            
-            &:hover{
-                background-color: $utility_color;
-                border: 4px solid white;
 
-                a{
-                    color: white;
+            & .text{
+                padding: 25px 0;
+            }
+
+            & button{
+                padding: 15px 30px;
+                border: 4px solid $utility_color;
+                font-size: 14px;
+                & a{
+                    color: black;
+                }
+                
+                &:hover{
+                    background-color: $utility_color;
+                    border: 4px solid white;
+
+                    a{
+                        color: white;
+                    }
                 }
             }
         }
-    }
 
-    & .col-right{
+        & .col-right{
         width: 60%;
         padding-left: 25px;
 
@@ -111,15 +112,18 @@ export default {
                 width: 100%;
                 margin-left: 12px;
             }
+
             & .man{
                  width: 90%;
-             }
+            }
+
             & .leaf{
                 width: 25px;
                 position: absolute;
                 top:155px;
                 left: 0;
             }
+
             & .green-branch{
                 width: 40px;
                 position: absolute;
@@ -144,10 +148,10 @@ export default {
             }
 
             & .brown-branch{
-                    width: 50px;
-                    position: absolute;
-                    right: 48px;
-                    top: -53px;
+                width: 50px;
+                position: absolute;
+                right: 48px;
+                top: -53px;
             }
 
             & .pink-butterfly-right{
@@ -165,7 +169,7 @@ export default {
                 right: -80px;
             }
         }
-    }
+        }
     }
 }
 

@@ -43,13 +43,13 @@
                 </div>
                 <!-- social link -->
                 <div class="social-item-container flex">
+                    <!-- eseguo un ciclo v-for dell'array passato tramite props (socialIcon) -->
                     <div class="social-item" v-for="(element, index) in socialIcon" :key="index">  
                         <a class="social-icon" href="#">
                             <i :class="`${element.platform}`"></i>
                         </a> 
                     </div>
                 </div>
-              
             </li>
 
         </ul>
@@ -59,6 +59,8 @@
 <script>
 export default {
     name:'MyFooter',
+    // importo l'oggetto relativo alle info da apporre al footer
+    // importo l'array contenente le classi che compongono le icone di fontawesome social
     props:{
         info:Object,
         socialIcon:Array,

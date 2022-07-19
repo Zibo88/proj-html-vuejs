@@ -1,11 +1,14 @@
 <template>
     <div class="section-5-container flex">
+        <!-- esegu un ciclo v-for per ogni elemento in props blogImg -->
         <div v-for="element, index in blogImg" :key="index" class="card">
-            <!-- <img :src="`../assets/img/${element.img}`" alt=""> -->
+            <!-- img -->
             <img class="blog-img" :src="require(`../assets/img/${element.img}`)" alt="blog-img">
+            <!-- title -->
             <h4 class="title-card light-weight">{{element.title}}</h4>
+            <!-- author -->
             <div class="author italic">{{element.author}}</div>
-
+            <!-- date -->
             <div class="date">
                 <div class="day italic">{{element.day}}</div>
                 <div class="month-and-year">{{element.monthAndYear}}</div>
@@ -18,6 +21,7 @@
 <script>
 export default {
     name: 'SectionFive',
+    // importo l'array blogImg da Maincomponent
     props:{
         blogImg:Array
     }
@@ -70,7 +74,6 @@ export default {
             font-weight: 600;
             }
         }
-       
     }
 }
 

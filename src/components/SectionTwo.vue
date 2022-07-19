@@ -2,18 +2,16 @@
        <div class="section-two-container">
             <ul class="list-second-section flex">
 
+                <!-- eseguo un ciclo for per ogni immagine presente in arrayImg -->
                 <li class="item-second-section" v-for="(poster, index) in arrayImg" :key="index">
-                    <!-- <img class="square" src="../assets/img/h-2-port-img-4.jpg" alt="item-img"> -->
-                    <!-- //////////////// da sistemare ///////////////////// -->
+                    <!-- img -->
                      <img :src="require(`../assets/img/${poster.name}`)" alt="poster-img">
-                    <!-- ////////////////////////////////////////////////////// -->
-
                     <!-- :hover features -->
                     <div class="features">
                         <h4 class="features-title">
                             Illustrations of novel   
                         </h4>
-
+                        <!-- text -->
                         <div class="features-illustration text">
                             <em>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -30,7 +28,6 @@
                         <div class="cart-square flex">
                              <img class="cart" src="../assets/svg/svg-6.svg" alt="cart-logo">
                         </div>
-                       
                     </div>
 
                 </li>
@@ -41,9 +38,7 @@
 <script>
 export default {
     name:'SectionTwo',
-    data(){
-        return{}
-    },  
+    // importo l'array tramite props da MainComponent
     props:{
         arrayImg: Array
     },
@@ -121,11 +116,7 @@ export default {
             &:hover .shop-icons{
                 display: block;
             }
-
-            
         }
     }
 }
-
-
 </style>

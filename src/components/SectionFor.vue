@@ -1,13 +1,17 @@
 <template>
+
     <section class="section-4-container">
         <div class="container">
+            <!-- title -->
             <h2 class="title-container">
                <span class="light-weight">Whant to work with us? Send us a </span> 
                <span class="italic"> a message! </span>
             </h2>
+            <!-- text -->
             <p class="text"> 
                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo modi sunt, veritatis magnam quas dolores nobis, magni nesciunt tempora ratione odit adipisci accusamus neque doloribus est aperiam ipsam velit eius.
             </p>
+            <!-- button -->
             <button>CONTACT</button>
         </div>
     </section>
