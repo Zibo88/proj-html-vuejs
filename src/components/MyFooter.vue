@@ -36,7 +36,7 @@
                 </div>
             </li>
 
-            <!-- fourth -->
+            <!-- fourth element -->
             <li class="list-item">
                 <div class="footer-item">
                     {{info.socialTitle}}
@@ -92,15 +92,16 @@ export default {
 
             & .footer-item{
                 padding: 5px 0;
-                font-size: 13px;
+                font-size: 11px;
             }
             & .social-item-container.flex{
                 width: 55%;
-                justify-content: space-between;
+                
 
                 & .social-item{
-                padding-top: 5px;
+                padding: 5px 16px 0 0;
                 font-size: 13px;
+            
 
                 & .social-icon{
                     color: black;

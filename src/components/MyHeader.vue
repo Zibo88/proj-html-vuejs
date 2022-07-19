@@ -42,7 +42,7 @@ export default {
     }
     .menu-item{
         margin: 0 15px;
-        font-size: 20px;
+        font-size: 16px;
 
         &:hover a {
             color: $utility_color;
