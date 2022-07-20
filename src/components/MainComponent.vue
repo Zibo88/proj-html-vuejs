@@ -15,11 +15,11 @@
              <!-- passo tramite props (imgSectionThree) l'array di immagini alla sezione 3 -->
             <SectionThree :imgSectionThree='arraySectionThree'/>
         </section>
-
+        <!-- quarta sezione -->
         <section>
             <SectionFor/>
         </section>
-
+        <!-- quinta sezione -->
         <section>
              <!-- passo tramite props (blogImg) l'array di immagini alla sezione 5 -->
             <SectionFive :blogImg='arraySectionFive'/>

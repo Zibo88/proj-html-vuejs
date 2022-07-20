@@ -3,9 +3,9 @@
             <ul class="list-second-section flex">
 
                 <!-- eseguo un ciclo for per ogni immagine presente in arrayImg -->
-                <li class="item-second-section" v-for="(poster, index) in arrayImg" :key="index">
+                <li class="item-second-section" v-for="(element, index) in arrayImg" :key="index">
                     <!-- img -->
-                     <img :src="require(`../assets/img/${poster.name}`)" alt="poster-img">
+                     <img :src="require(`../assets/img/${element.name}`)" alt="poster-img">
                     <!-- :hover features -->
                     <div class="features">
                         <h4 class="features-title">
@@ -13,9 +13,9 @@
                         </h4>
                         <!-- text -->
                         <div class="features-illustration text">
-                            <em>
+                            <p class="italic">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            </em>
+                            </p>
                         </div>
                     </div>
                     <!-- hover icons -->
